@@ -1,0 +1,16 @@
+[
+  {
+    "title": "HTML & CSS Basics",
+    "subtitle": "A beginner’s guide",
+    "thumbnail": "assets/thumbnails/book1.jpg",
+    "pdf": "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_1",
+    "rating": 4.5
+  },
+  {
+    "title": "JavaScript in Action",
+    "subtitle": "Master your scripts",
+    "thumbnail": "assets/thumbnails/book2.jpg",
+    "pdf": "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_2",
+    "rating": 4.8
+  }
+]
