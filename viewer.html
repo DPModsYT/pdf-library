@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PDF Viewer</title>
+  <title>Book Viewer</title>
   <style>
     html, body {
       margin: 0;
-      padding: 0;
       height: 100%;
+      overflow: hidden;
     }
     iframe {
       width: 100%;
@@ -20,9 +20,9 @@
   <iframe id="pdf-frame"></iframe>
 
   <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const pdf = urlParams.get('pdf');
-    document.getElementById("pdf-frame").src = `https://docs.google.com/gview?url=${pdf}&embedded=true`;
+    const params = new URLSearchParams(window.location.search);
+    const pdfUrl = params.get('pdf');
+    document.getElementById('pdf-frame').src = `https://docs.google.com/gview?url=${pdfUrl}&embedded=true`;
   </script>
 </body>
 </html>
