@@ -1,11 +1,12 @@
 [
- {
+{
   "title": "My First Book",
   "subtitle": "Shared from Google Drive",
-  "thumbnail": "assets/thumbnails/book1.jpg",
+  "thumbnail": "https://drive.google.com/uc?export=view&id=1RS72dpcmtCLVCH-1qkftbWuPD-K3mGB-",
   "pdf": "https://drive.google.com/uc?export=download&id=1MbYvyiZd4mCNBYckC6v3V5eG4z2ZhWEr",
   "rating": 4.7
 }
+
 
   
 ]
