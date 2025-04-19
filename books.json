@@ -13,7 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
       thumbnail: "https://res.cloudinary.com/demo/image/upload/w_300/deepwork.jpg",
       pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/deepwork.pdf",
       rating: 4.8
-    }
+    },
+ {
+    "title": "The Power of Now",
+    "subtitle": "A Guide to Spiritual Enlightenment",
+    "thumbnail": "https://res.cloudinary.com/your-cloud-name/image/upload/v1710000000/power-of-now.jpg",
+    "pdf": "https://res.cloudinary.com/your-cloud-name/raw/upload/v1710000000/power-of-now.pdf",
+    "rating": 4.7
+  }
   ];
 
   const bookGrid = document.getElementById("book-grid");
