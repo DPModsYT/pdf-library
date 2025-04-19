@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,6 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const pdfUrl = params.get("pdf");
-
     if (pdfUrl) {
       const viewerUrl = `pdfjs/web/viewer.html?file=${encodeURIComponent(pdfUrl)}`;
       document.getElementById("pdf-viewer").src = viewerUrl;
