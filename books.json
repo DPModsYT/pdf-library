@@ -14,13 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
       pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/deepwork.pdf",
       rating: 4.8
     },
- {
-    "title": "The Power of Now",
-    "subtitle": "A Guide to Spiritual Enlightenment",
-    "thumbnail": "https://res.cloudinary.com/your-cloud-name/image/upload/v1710000000/power-of-now.jpg",
-    "pdf": "https://res.cloudinary.com/your-cloud-name/raw/upload/v1710000000/power-of-now.pdf",
-    "rating": 4.7
+
+  {
+    "title": "Drive Book Sample",
+    "subtitle": "Google Drive hosted",
+    "thumbnail": "https://res.cloudinary.com/your-cloud/image/upload/sample-thumb.jpg",
+    "pdf": "https://drive.google.com/uc?export=download&id=1MbYvyiZd4mCNBYckC6v3V5eG4z2ZhWEr",
+    "rating": 4.5
   }
+
+
   ];
 
   const bookGrid = document.getElementById("book-grid");
