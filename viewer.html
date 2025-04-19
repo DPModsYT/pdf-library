@@ -21,14 +21,15 @@
   <iframe id="pdf-viewer"></iframe>
 
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const pdfUrl = params.get('pdf');
-    if (pdfUrl) {
-      const viewerUrl = `web/viewer.html?file=${encodeURIComponent(pdfUrl)}`;
-      document.getElementById('pdf-viewer').src = viewerUrl;
-    } else {
-      document.body.innerHTML = "<h2>No PDF URL Provided</h2>";
-    }
-  </script>
+  const params = new URLSearchParams(window.location.search);
+  const pdfUrl = params.get('pdf');
+  if (pdfUrl) {
+    const viewerUrl = `pdfjs/web/viewer.html?file=${encodeURIComponent(pdfUrl)}`;
+    document.getElementById('pdf-viewer').src = viewerUrl;
+  } else {
+    document.body.innerHTML = "<h2>No PDF URL Provided</h2>";
+  }
+</script>
+
 </body>
 </html>
