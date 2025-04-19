@@ -4,7 +4,7 @@ const books = [
     title: "The Power of Habit",
     subtitle: "Why We Do What We Do",
     thumbnail: "https://res.cloudinary.com/demo/image/upload/v1710000000/power-of-habit.jpg",
-    pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/power-of-habit.pdf",
+    pdf: "https://res.cloudinary.com/darpzie2c/image/upload/v1591513198/MINI_MILITIA_WALL_HACK.pdf",
     rating: 4.8
   },
   {
