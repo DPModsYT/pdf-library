@@ -1,36 +1,35 @@
-// Array of book objects
-const books = [
-  {
-    title: "The Power of Habit",
-    subtitle: "Why We Do What We Do",
-    thumbnail: "https://res.cloudinary.com/demo/image/upload/v1710000000/power-of-habit.jpg",
-    pdf: "https://res.cloudinary.com/darpzie2c/image/upload/v1591513198/MINI_MILITIA_WALL_HACK.pdf",
-    rating: 4.8
-  },
-  {
-    title: "Atomic Habits",
-    subtitle: "An Easy & Proven Way to Build Good Habits",
-    thumbnail: "https://res.cloudinary.com/demo/image/upload/v1710000000/atomic-habits.jpg",
-    pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/atomic-habits.pdf",
-    rating: 4.9
-  }
-  // Add more books here...
-];
+document.addEventListener("DOMContentLoaded", () => {
+  const books = [
+    {
+      title: "Atomic Habits",
+      subtitle: "Build good habits & break bad ones",
+      thumbnail: "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+      pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/sample.pdf",
+      rating: 4.9
+    },
+    {
+      title: "Deep Work",
+      subtitle: "Rules for focused success",
+      thumbnail: "https://res.cloudinary.com/demo/image/upload/w_300/deepwork.jpg",
+      pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/deepwork.pdf",
+      rating: 4.8
+    }
+  ];
 
-// Create book cards dynamically
-const bookGrid = document.getElementById("book-grid");
+  const bookGrid = document.getElementById("book-grid");
 
-books.forEach(book => {
-  const card = document.createElement("div");
-  card.className = "book-card";
+  books.forEach(book => {
+    const card = document.createElement("div");
+    card.className = "book-card";
 
-  card.innerHTML = `
-    <img src="${book.thumbnail}" alt="${book.title} thumbnail" class="book-thumb" />
-    <h3 class="book-title">${book.title}</h3>
-    <p class="book-subtitle">${book.subtitle}</p>
-    <p class="book-rating">Rating: ${book.rating}</p>
-    <a href="viewer.html?pdf=${encodeURIComponent(book.pdf)}" class="read-more" target="_blank">Read More</a>
-  `;
+    card.innerHTML = `
+      <img src="${book.thumbnail}" alt="${book.title}" />
+      <h3>${book.title}</h3>
+      <p>${book.subtitle}</p>
+      <p>⭐ ${book.rating}</p>
+      <a class="read-more" href="viewer.html?pdf=${encodeURIComponent(book.pdf)}" target="_blank">Read More</a>
+    `;
 
-  bookGrid.appendChild(card);
+    bookGrid.appendChild(card);
+  });
 });
