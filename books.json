@@ -1,10 +1,36 @@
-
-[
+// Array of book objects
+const books = [
   {
-    "title": "Sample Book",
-    "subtitle": "A demo PDF",
-    "thumbnail": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
-    "pdf": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "rating": 4.5
+    title: "The Power of Habit",
+    subtitle: "Why We Do What We Do",
+    thumbnail: "https://res.cloudinary.com/demo/image/upload/v1710000000/power-of-habit.jpg",
+    pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/power-of-habit.pdf",
+    rating: 4.8
+  },
+  {
+    title: "Atomic Habits",
+    subtitle: "An Easy & Proven Way to Build Good Habits",
+    thumbnail: "https://res.cloudinary.com/demo/image/upload/v1710000000/atomic-habits.jpg",
+    pdf: "https://res.cloudinary.com/demo/raw/upload/v1710000000/atomic-habits.pdf",
+    rating: 4.9
   }
-]
+  // Add more books here...
+];
+
+// Create book cards dynamically
+const bookGrid = document.getElementById("book-grid");
+
+books.forEach(book => {
+  const card = document.createElement("div");
+  card.className = "book-card";
+
+  card.innerHTML = `
+    <img src="${book.thumbnail}" alt="${book.title} thumbnail" class="book-thumb" />
+    <h3 class="book-title">${book.title}</h3>
+    <p class="book-subtitle">${book.subtitle}</p>
+    <p class="book-rating">Rating: ${book.rating}</p>
+    <a href="viewer.html?pdf=${encodeURIComponent(book.pdf)}" class="read-more" target="_blank">Read More</a>
+  `;
+
+  bookGrid.appendChild(card);
+});
