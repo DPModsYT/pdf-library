@@ -60,8 +60,12 @@
     if (!pdfUrl) {
       document.getElementById('pdf-render').innerText = 'No PDF provided';
     } else {
+      // Use a CORS proxy to avoid CORS issues
+      const corsProxy = "https://cors-anywhere.herokuapp.com/";
+      const proxiedUrl = corsProxy + pdfUrl;
+
       const container = document.getElementById('pdf-render');
-      const loadingTask = pdfjsLib.getDocument(pdfUrl);
+      const loadingTask = pdfjsLib.getDocument(proxiedUrl);
 
       loadingTask.promise.then(pdf => {
         pdfDoc = pdf;
