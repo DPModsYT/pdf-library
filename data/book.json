@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Atomic Habits",
+    "subtitle": "Build good habits & break bad ones",
+    "thumbnail": "https://res.cloudinary.com/demo/image/upload/sample.jpg",
+    "pdf": "https://res.cloudinary.com/demo/raw/upload/v1710000000/sample.pdf",
+    "rating": 4.9
+  },
+  {
+    "title": "Deep Work",
+    "subtitle": "Rules for focused success",
+    "thumbnail": "https://res.cloudinary.com/demo/image/upload/w_300/deepwork.jpg",
+    "pdf": "https://res.cloudinary.com/demo/raw/upload/v1710000000/deepwork.pdf",
+    "rating": 4.8
+  }
+]
